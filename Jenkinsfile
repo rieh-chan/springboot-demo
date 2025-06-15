@@ -22,7 +22,7 @@ pipeline {
                 sh '''
                   docker stop springboot || true
                   docker rm springboot || true
-                  docker run -d --name springboot -p 8080:8080 my-springboot-app
+                  docker run -d --name springboot -p 8081:8081 my-springboot-app
                 '''
             }
         }
